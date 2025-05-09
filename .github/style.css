@@ -77,3 +77,16 @@ body {
     display: inline-block;
     margin-top: 20px;       
   }
+
+  body.download-page {
+    min-height: auto;  
+    height: 100vh;        
+    overflow: hidden;      
+  }
+
+  img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 100%;
+  }
