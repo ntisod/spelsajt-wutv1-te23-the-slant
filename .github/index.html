@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Slippy Slope</h1>
+    <h1>The Slant</h1>
     <p>Rulla vidare, undvik hinder och kom så långt du kan!</p>
   </header>
 
@@ -26,7 +26,7 @@
     <p id="description">Slippy Slope är ett roligt och utmanande spel där du ska rulla din boll förbi alla typer av
          hinder. Ladda ner spelet nu och ha kul!</p>
 
-  <!-- Bilder av gameplay -->
+  <!-- Bilder av gameplay, nu är de bara exempel bilder-->
   <div class="gameplay-images">
     <img src="images/gameplay1.jpg" alt="Gameplay Screenshot 1" />
     <img src="images/gameplay2.jpg" alt="Gameplay Screenshot 2" />
@@ -36,8 +36,34 @@
 
 <footer> <p id="description">Slippy slope är ett spel där du ska hantera en liten boll
     ned för en oändlig ramp där du långsamt får mer och mer fart. Ha kul medans du undeviker hinder
-    och samlar in poäng, du kan också försöka få topplacering på våran leaderboard nedan!
-</p> </footer>
+    och samlar in poäng, du kan också försöka få topplacering på våran leaderboard nedan!</p>
+
+
+</footer>
+
+<hr>
+
+<h2>Highscore</h2>
+<ul id="highscore-list"></ul>
+<script>
+  const highscores = [
+    { name: "kingenahmed", score: 1200 },
+    { name: "abdullaklivaren", score: 950 },
+    { name: "mehmet123", score: 800 }
+  ];
+
+  const list = document.getElementById("highscore-list");
+
+  highscores.forEach(player => {
+    const li = document.createElement("li");
+    li.textContent = `${player.name}: ${player.score} poäng`;
+    list.appendChild(li);
+  });
+</script>
+
+<hr>
+
+
 
 </body>
 </html>
