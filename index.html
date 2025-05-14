@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Slant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>The Slant</h1>
+    <p>Rulla vidare, undvik hinder och kom så långt du kan!</p>
+  </header>
+
+  <main>
+    <button id="startBtn">Börja Spela</button>
+  </main>
+
+  <script>
+    document.getElementById("startBtn").addEventListener("click", function () {
+      window.location.href = "download.html";
+    });
+  </script>
+
+<footer>
+    <p id="description">Slippy Slope är ett roligt och utmanande spel där du ska rulla din boll förbi alla typer av
+         hinder. Ladda ner spelet nu och ha kul!</p>
+
+  <!-- Bilder av gameplay, nu är de bara exempel bilder-->
+  <div class="gameplay-images">
+    <img src="images/gameplay1.jpg" alt="Gameplay Screenshot 1" />
+    <img src="images/gameplay2.jpg" alt="Gameplay Screenshot 2" />
+    <img src="images/gameplay3.jpg" alt="Gameplay Screenshot 3" />
+  </div>
+</footer>
+
+<footer> <p id="description">Slippy slope är ett spel där du ska hantera en liten boll
+    ned för en oändlig ramp där du långsamt får mer och mer fart. Ha kul medans du undeviker hinder
+    och samlar in poäng, du kan också försöka få topplacering på våran leaderboard nedan!</p>
+
+
+</footer>
+
+<hr>
+
+<h2>Highscore</h2>
+<ul id="highscore-list"></ul>
+<script>
+  const highscores = [
+    { name: "KingenAhmed", score: 1090 },
+    { name: "AbdullaKlivaren", score: 950 },
+    { name: "Mehmet123", score: 890 }
+  ];
+
+  const list = document.getElementById("highscore-list");
+
+  highscores.forEach(player => {
+    const li = document.createElement("li");
+    li.textContent = `${player.name}: ${player.score} poäng`;
+    list.appendChild(li);
+  });
+</script>
+
+<hr>
+
+<a href="https://ntigymnasiet.se/sodertalje/" class="lank"
+ target="_blank">Clicka här för att komma till NTI-skolan</a>
+
+
+
+</body>
+</html>
