@@ -90,3 +90,17 @@ body {
     border-radius: 10px;
     max-width: 100%;
   }
+
+  .punktlista {
+  list-style-type: disc;
+  max-width: 600px;
+  margin: 0 auto;
+   padding-left: 0;
+  text-align: center;
+  list-style-position: inside;
+}
+
+ .lank2 {
+  color: orange;
+  display: inline-block;
+  }
